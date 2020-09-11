@@ -78,7 +78,7 @@ If the first argument is an object, it may have the following members:
 | --------- | ------ | ---------------------------------------------------------------- |
 | host      | String | Destination host IP address or name                              |
 | port      | Number | Destinaton UDP port                                              |
-| mcastif   | String | IP address of the network interface to send multicast traffic on |
+| mcastif   | String or Array | (Array of) IP address(es) of the network interface to listen to multicast traffic on |
 | universes | Array  | Array of universe numbers to join                                |
 
 The server will join the corresponding Multicast groups for each provided universe automatically and starts listening as soon as it is created.
